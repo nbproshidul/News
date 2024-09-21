@@ -1,0 +1,130 @@
+*::after, ::before{box-sizing: border-box;}
+*{padding: 0;margin: 0;font-family: Arial, Helvetica, sans-serif;}
+a{
+    text-decoration: none;
+}
+/* header section css */
+.top-header{
+    background:#ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.top-header div{
+    padding: 10px 0;
+    height: 100%;
+}
+.top-header div img{
+height: 100%;
+}
+.top-header :nth-child(2){
+padding-right: 10px;
+color: red;
+display: flex;
+align-items: center;
+}
+/* navigation section css */
+ul{
+    display: flex;
+    background:#ff4500;
+}
+ul li{
+    padding: 10px;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+ul li:hover{
+    background: #777;
+    transition: 0.5s;
+}
+/* Main content css*/
+.container{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-gap:5px;
+}
+.container div{
+padding: 10px;
+}
+.container :nth-child(1){
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+}
+.container :nth-child(2){
+    grid-row:1 / span 5;
+}
+.container :nth-child(3){
+    grid-column: 1 / span 3;
+}
+.container :nth-child(4){
+    grid-column: 1 / span 3;
+}
+.container :nth-child(5){
+    grid-column: 1 / span 3;
+}
+/* random post */
+.random section{
+    padding: 20px;
+    height:145px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+.random section img{
+    height: 145px;
+    border: 2px solid #ccc;
+    margin-right: 10px;
+
+}
+.random section div a{
+    float: right;
+    color:#fff;
+    background: #ff4500;
+    padding: 5px;
+}
+.random section div a:hover{
+    background: #000;
+    transition: 0.5s;
+}
+
+/* site bar css */
+.site_bar{
+    border-left: 1px solid #ccc;
+}
+.site_bar section h1{
+    margin-left: 10px;
+}
+.site_bar section h1::after{
+    content:"" ;
+    height: 1px;
+    background: red;
+}
+.input-group{
+    display: flex;
+    height: 30px !important;
+    border-radius: 10px;
+}
+
+.input-group input{
+    border: 1px solid #ccc;
+    height: 100%;
+    flex: 1;
+    padding: 0 10px;
+    border-radius:5px 0 0 5px;
+}
+.input-group span button{
+    padding: 8px;
+    background: #ff4500;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius:0 5px 5px 0;
+    cursor: pointer;
+}
+.input-group span button:hover{
+    background: #000;
+    transition: 0.5s;
+}
