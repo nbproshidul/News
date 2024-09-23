@@ -1,5 +1,5 @@
 *::after, ::before{box-sizing: border-box;}
-*{padding: 0;margin: 0;font-family: Arial, Helvetica, sans-serif;}
+*{padding: 0;margin: 0;font-family: Arial, Helvetica, sans-serif; box-sizing: border-box;}
 a{
     text-decoration: none;
 }
@@ -38,7 +38,7 @@ ul li a{
     color: #fff;
 }
 ul li:hover{
-    background: #777;
+    background: #000;
     transition: 0.5s;
 }
 /* Main content css*/
@@ -47,7 +47,7 @@ ul li:hover{
     grid-template-columns:repeat(4, 1fr);
     grid-gap:5px;
 }
-.container div{
+.container section{
 padding: 10px;
 }
 .container :nth-child(1){
@@ -66,31 +66,63 @@ padding: 10px;
 .container :nth-child(5){
     grid-column: 1 / span 3;
 }
-/* random post */
-.random section{
+/*================================== 
+Container section 
+====================================*/
+.h2Underline{
+    padding: 10px;
+    margin-left:10px;
+    position: relative;
+}
+.h2Underline::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background:#777;
+    bottom: 0;
+    left: 0;
+}
+.child div{
     padding: 20px;
-    height:145px;
     border-bottom: 1px solid #ccc;
     display: flex;
 }
-.random section img{
+.child div img{
     height: 145px;
     border: 2px solid #ccc;
     margin-right: 10px;
 
 }
-.random section div a{
-    float: right;
-    color:#fff;
-    background: #ff4500;
+.child div div{
+    display: block;
+    position: relative;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+.child div div h1{
+    margin-bottom: 10px;
+}
+.span-group{
+    padding: 0 !important;
+    margin-bottom: 10px;
+}
+.span-group span{
+    padding: 10px 10px 10px 0;
+}
+.child div div a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
     padding: 5px;
+    color: #fff;
+    background:#ff4500;
+    font-size: 14px;
 }
-.random section div a:hover{
-    background: #000;
-    transition: 0.5s;
-}
-
-/* site bar css */
+/* =======================================
+site bar css 
+========================================*/
 .site_bar{
     border-left: 1px solid #ccc;
 }
