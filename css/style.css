@@ -72,7 +72,9 @@ ul li:hover {
   grid-column: 1 / span 3;
 }
 .container :nth-child(5) {
+  grid-column: 1 / span 3;
 }
+
 .container :nth-child(6) {
   grid-column: 1 / span 4;
   border: 1px solid #000;
