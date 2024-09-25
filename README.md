@@ -1,3 +1,3 @@
 # Author: Roshidul Shorker
 
-site link: https://nbproshidul.github.io/News/
+site link: https://roshidulshorker.github.io/News/
