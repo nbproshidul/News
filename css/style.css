@@ -26,6 +26,10 @@ a {
 .top-header div img {
   height: 100%;
 }
+.top-header div img[alt="youtube"] {
+  margin-right: 10px;
+  font-size: 20px;
+}
 .top-header :nth-child(2) {
   padding-right: 10px;
   color: red;
